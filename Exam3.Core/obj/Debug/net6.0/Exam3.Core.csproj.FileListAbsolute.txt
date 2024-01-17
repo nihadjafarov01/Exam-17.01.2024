@@ -1,0 +1,12 @@
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\bin\Debug\net6.0\Exam3.Core.deps.json
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\bin\Debug\net6.0\Exam3.Core.dll
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\bin\Debug\net6.0\Exam3.Core.pdb
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\Exam3.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\Exam3.Core.AssemblyInfoInputs.cache
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\Exam3.Core.AssemblyInfo.cs
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\Exam3.Core.csproj.CoreCompileInputs.cache
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\Exam3.Core.dll
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\refint\Exam3.Core.dll
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\Exam3.Core.pdb
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\ref\Exam3.Core.dll
+C:\Users\nihad\Desktop\Exam-17.01.2024\Exam3.Core\obj\Debug\net6.0\Exam3.Core.csproj.AssemblyReference.cache

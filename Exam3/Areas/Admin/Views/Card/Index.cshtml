@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CardListItemVM>
+
+<a asp-action="Create" type="button" class="btn btn-success">Create</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th colspan="2" scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td class="text-center" colspan="5">
+                        No data
+                    </td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Title</td>
+                        <td>@item.Description</td>
+                        <td>
+                            <a asp-action="Update" asp-route-id="@item.Id" type="button" class="btn btn-primary">Update</a> 
+                            <form method="post">
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>

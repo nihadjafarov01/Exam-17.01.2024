@@ -1,6 +1,6 @@
-﻿
-using AutoMapper;
+﻿using AutoMapper;
 using Exam3.Business.Profiles;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Exam3.Business
@@ -18,11 +18,11 @@ namespace Exam3.Business
             services.AddScoped<IAuthService, AuthService>();
             return services;
         }
-        public static IServiceCollection AddMappers(this IServiceCollection services)
+        public static IServiceCollection AddMappers(this IServiceCollection services, IWebHostEnvironment env)
         {
             services.AddAutoMapper(opt =>
             {
-                opt.AddProfile<CardMappingProfile>();
+                opt.AddProfile(new CardMappingProfile(env));
             });
             return services;
         }

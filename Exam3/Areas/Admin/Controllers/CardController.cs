@@ -11,6 +11,7 @@ namespace Exam3.Areas.Admin.Controllers
     [Area("Admin")]
     public class CardController : Controller
     {
+        IWebHostEnvironment _env { get; }
         ICardService _service { get; }
 
         public CardController(ICardService service)
@@ -30,6 +31,7 @@ namespace Exam3.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(CardCreateVM vm)
         {
+            if (!ModelState.IsValid) return View(vm);
             _service.Create(vm);
             return RedirectToAction("Index");
         }
@@ -40,6 +42,7 @@ namespace Exam3.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Update(int id, CardUpdateVM vm)
         {
+            if (!ModelState.IsValid) return View(vm);
             _service.Update(id, vm);
             return RedirectToAction("Index");
         }

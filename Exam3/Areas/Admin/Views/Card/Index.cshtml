@@ -1,12 +1,15 @@
 ﻿@model IEnumerable<CardListItemVM>
 
 <a asp-action="Create" type="button" class="btn btn-success">Create</a>
+<p>
     <table class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Title</th>
                 <th scope="col">Description</th>
+                <th scope="col">ImageUrl</th>
+                <th scope="col">Image</th>
                 <th colspan="2" scope="col">Action</th>
             </tr>
         </thead>
@@ -27,13 +30,19 @@
                         <td>@item.Id</td>
                         <td>@item.Title</td>
                         <td>@item.Description</td>
+                        <td>@item.ImageUrl</td>
+                        <td>
+                            <img height="50px" src="~/@(item.ImageUrl)"/>
+                        </td>
                         <td>
                             <a asp-action="Update" asp-route-id="@item.Id" type="button" class="btn btn-primary">Update</a> 
-                            <form method="post">
-                                <button type="button" class="btn btn-danger">Delete</button>
-                            </form>
                         </td>
-                    </tr>
+                            <form method="post">
+                                <td>
+                                <button asp-action="Delete" asp-route-id="@item.Id" type="submit" class="btn btn-danger">Delete</button>
+                                </td>
+                            </form>
+                        </tr>
                 }
             }
         </tbody>

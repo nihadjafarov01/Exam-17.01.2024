@@ -74,5 +74,33 @@ namespace Exam3.Business.Services.Implements
             }
             return true;
         }
+        public async Task<bool> CreateAdmin()
+        {
+            if(await _userManager.FindByNameAsync("Admin") == null)
+            {
+                AppUser admin = new AppUser
+                {
+                    Email = "admin@gmail.com",
+                    Name = "admin",
+                    Surname = "admin",
+                    UserName = "admin",
+                };
+                var result = await _userManager.CreateAsync(admin,"Admin123");
+                if(!result.Succeeded)
+                {
+                    return false;
+                }
+                var result2 = await _userManager.AddToRoleAsync(admin, Roles.Admin.ToString());
+                if (!result2.Succeeded)
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

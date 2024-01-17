@@ -8,5 +8,6 @@ namespace Exam3.Business.Services.Interfaces
         public Task<bool> Register(RegisterVM vm);
         public Task<bool> Login(LoginVM vm);
         public Task<bool> CreateRoles();
+        public Task<bool> CreateAdmin();
     }
 }

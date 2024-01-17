@@ -4198,7 +4198,10 @@
         },
         "runtime": {
           "bin/placeholder/Exam3.Business.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Exam3.Core/1.0.0": {
         "type": "project",

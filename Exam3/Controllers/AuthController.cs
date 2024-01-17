@@ -47,11 +47,11 @@ namespace Exam3.Controllers
         }
         public async Task<bool> CreateRoles()
         {
-            if(await _service.CreateRoles())
-            {
-                return true;
-            }
-            return false;
+            return await _service.CreateRoles();
+        }
+        public async Task<bool> CreateAdmin()
+        {
+            return await _service.CreateAdmin();
         }
     }
 }

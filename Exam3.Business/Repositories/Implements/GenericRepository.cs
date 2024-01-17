@@ -11,14 +11,23 @@ namespace Exam3.Business.Repositories.Implements
         public GenericRepository(Exam3DbContext context)
         {
             _context = context;
-            Table = _context.Set<T>();
         }
-        DbSet<T> Table {  get; }
+
+        DbSet<T> Table => _context.Set<T>();
 
         public IEnumerable<T> GetAll()
         {
-            IEnumerable<T> data = Table.ToList();
-            return (data);
+            return Table;
+        }
+
+        public T GetById(int id)
+        {
+            return Table.Find(id);
+        }
+
+        public void Insert(T model)
+        {
+            throw new NotImplementedException();
         }
 
         public void Create(T model)
@@ -26,26 +35,22 @@ namespace Exam3.Business.Repositories.Implements
             Table.Add(model);
             Save();
         }
-        //public void Update(int id, T model)
-        //{
-        //    var data = GetById(id);
-        //    data = model;
-        //    Save();
-        //}
+
         public void Delete(int id)
         {
-            var model = Table.Find(id);
+            var model = GetById(id);
             Table.Remove(model);
             Save();
         }
+
         public void Save()
         {
             _context.SaveChanges();
         }
 
-        public T GetById(int id)
+        public T Update(int id)
         {
-            return Table.Find(id);
+            return GetById(id);
         }
     }
 }

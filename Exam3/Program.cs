@@ -22,7 +22,7 @@ namespace Exam3
 
             builder.Services.AddServices();
 
-            builder.Services.AddMappers();
+            builder.Services.AddMappers(builder.Environment);
 
             builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
             {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o511fP5nhkSpYH5d+VO8yqL8OzLbdb1hcZCSa7+A9wI=",
+  "Hash": "YiWsfy0ZakFYeHMCh8MYh0B3fQC2RERPS8i2zR+XGfo=",
   "Source": "Exam3",
   "BasePath": "_content/Exam3",
   "Mode": "Default",
@@ -32536,6 +32536,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\cars-automobile\\standalone.html"
+    },
+    {
+      "Identity": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\images\\cards\\gigachad.jpg",
+      "SourceId": "Exam3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\",
+      "BasePath": "_content/Exam3",
+      "RelativePath": "images/cards/gigachad.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cards\\gigachad.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\images\\cards\\photo-1603984973710-e915353b35fa.webp",
+      "SourceId": "Exam3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\",
+      "BasePath": "_content/Exam3",
+      "RelativePath": "images/cards/photo-1603984973710-e915353b35fa.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cards\\photo-1603984973710-e915353b35fa.webp"
     },
     {
       "Identity": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\vendor\\contact-mailer.php",

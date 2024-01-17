@@ -18,7 +18,8 @@ namespace Exam3.Controllers
         public IActionResult Index()
         {
             IEnumerable<CardListItemVM> data = _service.GetAll();
-            return View(data);
+            var re =  data.TakeLast(3);
+            return View(re);
         }
 
     }

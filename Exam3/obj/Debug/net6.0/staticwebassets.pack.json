@@ -7649,6 +7649,14 @@
       "PackagePath": "staticwebassets\\cars-automobile\\standalone.html"
     },
     {
+      "Id": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\images\\cards\\gigachad.jpg",
+      "PackagePath": "staticwebassets\\images\\cards\\gigachad.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\images\\cards\\photo-1603984973710-e915353b35fa.webp",
+      "PackagePath": "staticwebassets\\images\\cards\\photo-1603984973710-e915353b35fa.webp"
+    },
+    {
       "Id": "C:\\Users\\nihad\\Desktop\\Exam-17.01.2024\\Exam3\\wwwroot\\vendor\\PHPMailer\\Exception.php",
       "PackagePath": "staticwebassets\\vendor\\PHPMailer\\Exception.php"
     },

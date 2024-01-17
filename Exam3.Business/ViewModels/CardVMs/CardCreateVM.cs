@@ -1,9 +1,11 @@
-﻿namespace Exam3.Business.ViewModels.CardVMs
+﻿using Microsoft.AspNetCore.Http;
+
+namespace Exam3.Business.ViewModels.CardVMs
 {
     public class CardCreateVM
     {
         public string Title { get; set; }
-        public string ImageUrl { get; set; }
+        public IFormFile ImageFile { get; set; }
         public string Description { get; set; }
     }
 }
